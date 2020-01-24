@@ -2,7 +2,7 @@ function setup() {
   createCanvas(1200, 800);
 }
 
-alert("Drag mouse to draw a circle");
+alert("Press mouse to draw a circle");
 
 function draw() {
   if (mouseIsPressed) {
