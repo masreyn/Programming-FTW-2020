@@ -148,6 +148,6 @@ triangle(170, 35, 220, 400, 120, 400);
   fill(col.r, col.g, col.b);
   noStroke();
   ellipse(spot.x, spot.y, 24, 24);
+//snow end
 
 }
-//snow end
