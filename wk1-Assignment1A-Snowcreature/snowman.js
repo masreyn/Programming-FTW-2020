@@ -44,7 +44,7 @@ ellipse(500, 415, 260, 250);
 //head
 ellipse(500, 200, 210, 200);
 
-  //left arm
+//left arm
 stroke("#111");
 strokeWeight(6);
 line(240, 330, 405, 370);
@@ -60,19 +60,19 @@ line(620, 355, 775, 315);
 
 //therometer
 stroke("#a4ceee");
-strokeWeight:(6);
+strokeWeight:(4);
 fill(255);
 rect(745, 209, 23, 160, 20);
 
 //thermometer-temp reading
 stroke("#a4ceee");
-strokeWeight:(5);
+strokeWeight:(4);
 fill(255,0,0);
 rect(745, 315, 23, 40);
 
 //thermometer bulb
 stroke("#a4ceee");
-strokeWeight:(5);
+strokeWeight:(4);
 fill(255,0,0);
 ellipse(757, 360, 50,50); 
 
@@ -92,18 +92,17 @@ noStroke();
 quad(425, 35, 575, 35, 565, 120, 445, 120);
 
 //eyes
-//eyes ellipse 
+//eyes ellipse -whites-schlera
 stroke("#333");
 //fill(255);
 fill(fill1);
-  
 strokeWeight(4);
 ///left eye ellipse
 ellipse(460, 190, 35, 50);
 //right eye ellipse
 ellipse(545, 190, 35, 50);
 
-  //eyes-black-iris
+//eyes-black-iris
 stroke("#111111");
 strokeWeight(25);
 //point(464, 200);
@@ -139,7 +138,6 @@ strokeWeight(4);
 triangle(170, 35, 220, 400, 120, 400);
 
 //snow function - The random() Function - p5.js Tutorial. The random() function here z-index-layering
-
   col.r = random (225, 255);
   col.g = (255,255);
   col.b = random (255, 255);
