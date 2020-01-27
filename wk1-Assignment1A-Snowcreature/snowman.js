@@ -36,7 +36,7 @@ triangle(1, 800, 1000, 800, 70, 40);
 fill("#eff8ff");
 strokeWeight(5);
 stroke("#a4ceee");
-//stroke(stroke1);
+//stroke(stroke1); default gray is jarrring with other stroke coors
 //body-lower
 ellipse(500, 640, 320, 290);
 //body-torso
