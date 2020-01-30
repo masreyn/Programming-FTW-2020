@@ -67,11 +67,11 @@ noFill();
 
 // hat brim
 //stroke("#c0392b");
-stroke(0);
+stroke("red");
 strokeWeight(35);
 line(400,120,600,120);
 //hat body
-fill(0);
+fill("red");
 stroke(3);
 quad(425, 35, 575, 35, 565, 120, 445, 120);
 
