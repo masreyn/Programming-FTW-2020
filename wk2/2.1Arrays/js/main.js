@@ -14,7 +14,12 @@ let inputMovie = prompt('What was the last movie you watched?');
 myMoviesArray.push(inputMovie);
 console.log(myMoviesArray);
 
-
+//toString() method
+        /*console.log(kensCar.toString());
+        const myCars = ['rav', 'pilot', 'juke'];    
+        console.log(myCars.toString());
+        */
+       
 console.log(myMoviesArray.toString());
 const allMovies = myMoviesArray.toString();
 alert('Here is the list of recently watched movies:' + allMovies);
