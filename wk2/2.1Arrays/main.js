@@ -11,14 +11,7 @@ console.log(myMoviesArray);
 
 //add user input w/ array manipuation.  "push" - add items to the end
 let inputMovie = prompt('What was the last movie you watched?');
-
 myMoviesArray = [' The Big Lebowski ', 'Harry Potter ', 'The Seventh Seal ', 'Urgh ', 'Singing in the Rain '];
-console.log(myMoviesArray);
-
-//add user input w/ array manipuation.  "push" - add items to the end
-let inputMovie = prompt(' What was the last movie you watched?');
-
-myMoviesArray.push(inputMovie);
 console.log(myMoviesArray);
 
 //toString() method
