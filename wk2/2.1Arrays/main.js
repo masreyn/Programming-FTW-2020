@@ -14,7 +14,7 @@ let inputMovie = prompt('What was the last movie you watched?');
 myMoviesArray = [' The Big Lebowski ', 'Harry Potter ', 'The Seventh Seal ', 'Urgh ', 'Singing in the Rain '];
 console.log(myMoviesArray);
 
-//toString() method
+//toString() method 
         /*console.log(kensCar.toString());
         const myCars = ['rav', 'pilot', 'juke'];    
         console.log(myCars.toString());
