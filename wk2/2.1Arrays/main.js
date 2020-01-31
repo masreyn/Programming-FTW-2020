@@ -6,20 +6,19 @@
         5. display full list of movies with toString() method
         */
        
-myMoviesArray = ['Big Lebowski', 'Harry Potter', 'The Seventh Seal', 'Urgh', 'Singing in the Rain'];
+myMoviesArray = ['Big Lebowski ', ' Harry Potter ', ' The Seventh Seal ', ' Urgh ', ' Singing in the Rain', ];
 console.log(myMoviesArray);
 
 //add user input w/ array manipuation.  "push" - add items to the end
 let inputMovie = prompt('What was the last movie you watched?');
-myMoviesArray = [' The Big Lebowski ', 'Harry Potter ', 'The Seventh Seal ', 'Urgh ', 'Singing in the Rain '];
+myMoviesArray.push(inputMovie);
 console.log(myMoviesArray);
 
-//toString() method 
+//toString() method
         /*console.log(kensCar.toString());
         const myCars = ['rav', 'pilot', 'juke'];    
         console.log(myCars.toString());
         */
-       
 console.log(myMoviesArray.toString());
 const allMovies = myMoviesArray.toString();
-alert('Here is the list of recently watched movies:' + allMovies);
+alert('Here is the list of recently watched movies: ' +  allMovies);
