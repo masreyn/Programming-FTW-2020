@@ -7,7 +7,7 @@ const myQuiz  = [
     { question: 'What is the capital of Algeria?', answer: 'Algiers' }
 ]
 
-const randomQuestionIdx = myQuiz [Math.round(Math.random() * myQuiz.length -1)];
+const randomQuestionIdx = myQuiz[Math.round(Math.random() * myQuiz.length -1)];
 let userAnswer = prompt(randomQuestionIdx.question, "")
 alert('You said "' + userAnswer + '".' + ' The correct answer is ' + randomQuestionIdx.answer +'.');
 
