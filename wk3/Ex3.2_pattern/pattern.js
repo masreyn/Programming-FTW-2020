@@ -4,7 +4,6 @@
 
 function createTile (orginX, orginY, primaryColor, secondaryColor, quatrefoilCircles, electronCircles) {
   translate(orginX, orginY);
-  // mine
   fill(primaryColor);
   rect(0, 0, 200, 200);
   // rondelle circle 2- large
