@@ -1,0 +1,21 @@
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {padding: 0; margin: 0;} 
+
+canvas {
+    border-radius: 15px;}  
+/*.canvas {
+  border-radius: 12px;
+}*/
+
