@@ -38,7 +38,7 @@ function checkQuestion () {
     rightAnswer = rightAnswer + 1;
   } else {
     // this is the wrong condition
-    response = 'Oops, that was not correct! Try again';
+    response = 'Wrong Answer - Try Again';
     responseColor = 'red';
     wrongAnswer = wrongAnswer + 1;
   }
@@ -56,7 +56,7 @@ function next () {
     return;
   }
   if (wrongAnswer > 4) {
-    alert('Sorry you lost, you had too many wrong answers');
+    alert('Sorry-Game Over');
     return;
   }
   const randomIndex = Math.ceil(Math.random() * statements.length - 1);
