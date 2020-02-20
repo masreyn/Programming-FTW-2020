@@ -12,7 +12,7 @@ const gameState = {
 
 let cardback;
 function preload(){
-    cardback = loadImage('images/cardback.png')
+    cardback = loadImage('images/cardback.png');
 } 
 
 function setup () {
@@ -28,6 +28,8 @@ function setup () {
     startingX = 100;
   }
 }
+
+
 
 function mousePressed() {
    for (let k = 0; k < cards.length; k++){
@@ -49,9 +51,10 @@ class Card {
 
    show () {
    if (this.face === DOWN)  {
+     console.log('showing down');
       fill('red');
       rect(this.x, this.y, this.width, this.height, 10);
-      image(cardback, this.x, this.y);
+      image(cardback, this.x, this.y, this.width, this.height);
    } else {
       fill('#aaa')
       rect(this.x, this.y, this.width, this.height, 10);
