@@ -1,4 +1,4 @@
-
+// gram pos rods | Anthrax
 let cells = [];
 
 function setup () {
@@ -29,7 +29,7 @@ class Cell {
 
   show () {
     noStroke();
-    fill('#ff45f3');
-    ellipse(this.x, this.y, 37, 18);
+    fill('#af35a3');
+    rect(this.x, this.y, 37, 18, 20);
   }
 }
