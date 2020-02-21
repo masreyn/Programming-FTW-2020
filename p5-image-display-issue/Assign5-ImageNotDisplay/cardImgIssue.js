@@ -3,7 +3,7 @@
 //let myCard;
 const DOWN = 'down';
 const UP = 'up';
-let startingX = 100; 
+let startingX = 100;
 let startingY = 100;
 let cards = [];
 const gameState = {
@@ -12,7 +12,7 @@ const gameState = {
 
 let cardback;
 function preload(){
-    cardback = loadImage('images/cardback.png')
+    cardback = loadImage('images/cardback.png');
 } 
 
 function setup () {
@@ -48,10 +48,11 @@ class Card {
   }
 
    show () {
-   if (this.face === DOWN)  {
+   if (this.face === DOWN) {
+      console.log('showing down');
       fill('red');
       rect(this.x, this.y, this.width, this.height, 10);
-      image(cardback, this.x, this.y);
+       image(cardback, this.x, this.y, this.width, this.height);
    } else {
       fill('#aaa')
       rect(this.x, this.y, this.width, this.height, 10);
