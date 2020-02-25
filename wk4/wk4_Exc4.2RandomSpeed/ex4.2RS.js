@@ -48,8 +48,6 @@ function mousePressed() {
 
 // make a fxn to be somehting we can detects
 function drawShape () {
-  //stroke('yellow');
-  //strokeWeight(4);
   fill('red');
   rect(rectX, rectY, rectWidth, rectHeight, 15);
 }
