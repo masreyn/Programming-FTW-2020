@@ -16,7 +16,7 @@
     <div id="myApp">
       <h1>{{message}}</h1>
         <p v-if="llamasAreCute!==true">Llamas are NOT cute</p>
-        <p v-else="llamasAreCute==true">Llamas are cute!</p>
+        <p v-else="llamasAreCute==true">Llamas are REALLY cute!</p>
     </div>
 
     <!--v-for directive can be used for displaying a list of items using the data from an Array-->
@@ -41,7 +41,7 @@
 
     <!-- v-model directive- 2-way bind between form input and app-->
     <div id="llamaMessage">
-      <p> Write a message to a Llama here</p>
+      <p> Write a message to a Llama here:</p>
       <p>{{ message }}</p>
       <input v-model="message">
     </div>
