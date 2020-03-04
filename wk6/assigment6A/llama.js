@@ -1,8 +1,3 @@
-// Vue Introduction-https://vuejs.org/v2/guide/
-/*          In <html>
-  v-bind:title="message" | v-if=""" | v-for="todo in todos"
-  v-on:click="reverseMessage" | v-model="message"  */
-
 var app = new Vue({
   el: '#llama-image',
   data: {
@@ -26,7 +21,7 @@ new Vue({
       { text: 'Lama Glama is the scientific name (species) name for Llamas.' },
       { text: 'Llama are herbivores that forage on a wide variety of plants & trees. ' },
       { text: 'Llamas are pseudoruminants. They have 1 stomach with 3 chambers. ' },
-      { text: 'Llamas evolved from camels. they are the camel’s hippie cousins. ' },
+      { text: 'Llamas evolved from camels. They are the camel’s hippie cousins. ' },
       { text: 'Llamas are not able to retain water like camels. ' },
       { text: ' The gestation period of a llama is 11.5 months!! ' },
       { text: 'Llamas generally have a single baby called a "cria", which is Spanish for kid. ' },
@@ -37,11 +32,11 @@ new Vue({
   }
 });
 
+// button - bonus llama fact 
 new Vue({
   el: '#bonus-llama',
   data: {
     show: false
-    // show: true fact on to start
   }
 })
 

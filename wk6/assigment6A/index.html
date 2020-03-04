@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-<div class="page-content">
+   <div class="page-content">
     <div id="llama-image">
       <div class="llama-img">
       <img :src="image" />
       </div>
     </div>
   
+  <!--use v-if to conditionally display or hide one of your facts-->
     <div id="myApp">
       <h1>{{message}}</h1>
         <p v-if="llamasAreCute!==true">Llamas are NOT cute</p>
@@ -27,12 +28,12 @@
           </li>
       </ol>
     </div>
+
     <div class="bonus">
     <div id="bonus-llama">
       <button v-on:click="show = !show">
         Bonus Llama Fact!
       </button>
-
       <transition name="fade">
          <p v-if = "show">Llamas have very long eyelashes & three eyelids. Their eyes are designed with special sunshades built in, that look like a curtain of ruffles hanging in the eyeball, and close like Venetian blinds when needed.</p>
       </transition>
@@ -45,9 +46,8 @@
       <p>{{ message }}</p>
       <input v-model="message">
     </div>
-</div><!--.page-content -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="llama.js"></script>
-  
+   </div><!--.page-content -->
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="llama.js"></script>
   </body>
 </html>
