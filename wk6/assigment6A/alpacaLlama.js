@@ -5,6 +5,17 @@ var app = new Vue({
   }
 })
 
+
+new Vue({
+    el: '#myDemoApp',
+    data: {
+      foo: 'bar',
+      link: 'https://www.google.com'
+    }
+  });
+  
+  
+
 new Vue({
   el: '#myApp',
   data: {
@@ -12,6 +23,9 @@ new Vue({
     llamasAreCute: true
   }
 });
+
+
+//
 
 // creating a to do list
 new Vue({
