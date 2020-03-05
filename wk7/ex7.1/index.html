@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex 7.1</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+<!--v-for directive can be used for displaying a list of items using the data from an Array-->
+        <div id="llamaAlpaca" v-cloak>
+            <div class="container">
+            <div class="layout">
+            <!--Llamas-->  
+                <div class="col">
+                <h2 v-bind:style="myInlineStyle" 
+                v-bind:align="myParaAlignment">Llama Facts</h2>
+                <a v-bind:href=" linkLlama"
+                v-bind:title="titleLlama">Llama Source Info</a> 
+                    <ul>
+                    <li v-for="(llama, index) in llamaFacts"
+                    v-bind:class="{red:index%2==0}">
+                         {{llama.text}}
+                    </li>
+                    </ul>
+                </div>
+
+                <!--Alpacas-->
+                <div class="col">
+                <h2 v-bind:style="myInlineStyle" 
+                v-bind:align="myParaAlignment">Alpaca Facts</h2>
+                <a v-bind:href=" linkAlpaca"
+                v-bind:title="titleAlpaca">Alapaca Source Info</a>
+                    <ul>
+                    <li v-for="(alpaca, index) in alpacaFacts"
+                    v-bind:class="{red:index%2==0}">
+                         {{alpaca.text}}
+                    </li>
+                    </ul>
+                </div>
+            </div> 
+            </div>
+        </div>   
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
