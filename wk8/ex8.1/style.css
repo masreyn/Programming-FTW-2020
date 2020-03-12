@@ -1,0 +1,65 @@
+[v-cloak] {
+    display: none;
+  }
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em; 
+    color: #222; 
+    padding:0;
+    margin: auto 0;
+    background-color:#f4f4f4; 
+}
+form {
+    width: 100%;
+    max-width: 350px;
+    background: #a1d9de;
+    margin: 0.4em auto 0;
+    padding: 1em;
+    border-radius: 15px;
+}
+legend {
+  font-weight: 600;
+}
+div {
+    margin: 10px 0;
+    display: flex;
+}
+div.alpaca-color, 
+div.output {
+    flex-direction: column;
+}
+div.alpaca-status {
+flex-direction: column;
+padding: 0.8em;
+background-color: #d7e2b6;
+border-radius: 15px;
+}
+
+div label {
+    margin-right: 10px;
+}
+div input, div-select {
+    flex-grow: 1; 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 5px 0;
+}
+.output {
+  background-color: #d7e2b6;
+  padding: .9em;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
