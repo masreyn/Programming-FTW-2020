@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>8.2 Exercise - Calculator</title>
+        <meta name="description" content="calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="calc-container">
+            <div id="calcApp" v-cloak>
+             <form>
+                <div>
+                    <h3>Calculator</h3>
+                    <!-- ** v-model.number ** Vue built in functionanlity, capability to cast to string-->
+                    <input v-model.number="firstNum" type="number" placeholder="first number">
+                    <select v-model="operation">
+                        <option value="add">+</option>
+                        <option value="subtract">-</option>
+                        <option value="multiply">&times;</option>
+                        <option value="divide">&divide;</option>
+                    </select>
+                    <input v-model.number="secondNum" type="number" placeholder="second number">
+            </div>
+            <button v-on:click="calculate(firstNum, secondNum)" type="button">Calculate</button>
+            </form>
+            <div class="output">
+                Operation: {{operation}}</br>
+                Total: <strong>{{total}}</strong>
+            </div>
+            </div>
+        </section>  
+        <!--scripts--> 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+   </body>
+</html>

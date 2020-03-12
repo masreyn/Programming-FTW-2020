@@ -1,0 +1,51 @@
+[v-cloak] {
+    display: none;
+  }
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.1em; 
+    color: #5b0700; 
+    background-color:#f4f4f4; 
+    margin: 0 auto;
+    padding:0;
+}
+.calc-container{
+  margin: 1em auto 0; 
+ }
+#calcApp {
+  background:#e69e9e;
+  border: 1px solid #5b0700;
+  border-radius: 15px;
+  max-width:  23em;
+  margin: 0 auto;
+  padding: 3em 1.5em; 
+}
+input {
+  border: 1px solid #5b0700;
+  border-radius: 7px;
+  padding: 4px;
+}
+button {
+  background: #5b0700;
+  color: #efdada;
+  border: none;
+  border-radius: 10px;  
+  border-bottom: 1px solid #5b0700;
+  font-weight: 600;
+  margin: 18px 0px;
+  padding: 11px;
+}
+.output{
+  color:#5b0700;
+  font-weight: 500;
+  border-top: 2px solid #5b0700 ;
+  padding-top: 11px;
+}
