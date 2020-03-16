@@ -1,0 +1,137 @@
+[v-cloak] {
+display: none;
+}
+html {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+*, *:before, *:after {
+-webkit-box-sizing: inherit;
+-moz-box-sizing: inherit;
+box-sizing: inherit;
+}
+html {
+background:linear-gradient(0deg, #6e3667 20%, #7abe15 80%);
+} 
+* {
+font-family: 'Fira Sans', sans-serif;
+font-size: 1em;
+line-height: 1.2; 
+}
+body {
+  color: #1a0315;
+  width: 100%;
+  max-width: 1080px;
+  margin: 3em auto 1em;
+}
+.form-heading {
+  margin-bottom: 3px;;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.collectionWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6em 1em;
+}
+.collectionRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.collectionRow.odd {
+  /*background-color: #d4c3d1;*/
+  background-color: #e2d7e1;
+}
+.collectionRow.header {
+  background-color: #6e3767;
+  font-size: 1.1rem;
+  padding: 8 0 8 0px;
+  color: #fff;
+}
+.collectionRow.owned {
+  color: #6e3667;
+  font-weight: 600;
+}
+.cell {
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+}
+.plant-image img {
+  display: block;
+  max-width: 160px;
+}
+.new-plant-form fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items: center;
+  color: white;
+}
+fieldset {
+  border-color: #fff;
+  padding-bottom: 12px;
+  padding-left: 16px;
+}
+.legend{
+  margin-bottom: 3px;
+}
+.new-plant-form div{
+  margin: 10px 5px;
+  width: 120px;
+}
+.new-plant-form div label {
+  min-width: 120px;
+}
+.new-plant-form input {
+  max-width: 160px;
+  margin-top: 2px;
+  padding: 1px;
+  display: block;
+}
+.btn-submit {
+  padding: 10px 13px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #88d317;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}  
+.btn-submit:hover{
+  background-color: #354609;
+  transition: all .3s ease-in-out; 
+  transform: scale(1.2); 
+}
+.btn-submit:{ 
+  transition: all .3s ease-in-out; 
+}
+.btn-delete {
+    padding: 10px 14px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #6e3667;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+} 
+.btn-delete:hover {
+  background-color: #354609;
+  transition: all .3s ease-in-out; 
+  transform: scale(1.2); 
+}
+.btn-delete:{ 
+  transition: all .3s ease-in-out; 
+}

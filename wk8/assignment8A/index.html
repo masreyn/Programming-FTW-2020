@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>8A - Adding and Deleting Items from Your Collection Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="normalize.css">
+  </head>
+  <body>
+   <h1 class="form-heading">Perennial Garden Planner</h1>
+   <div id="app">
+    <div class="collectionWrapper">
+          <div class="collectionRow header">
+              <div class="cell name">Name</div>
+              <div class="cell install-date">Date Planted</div>
+              <div class="cell number">Quantity Planted</div>
+              <div class="cell plant-image">Image</div>
+              <div class="cell collected">Part of the collection</div>
+              <div class="cell actions">
+                Actions
+              </div>
+          </div>
+          <div class="collectionRow" v-for="(plant, index) in plants" v-bind:class="{odd: index % 2 !== 0, owned: plant.collected}">
+                <div class="cell name">{{plant.name}}</div>
+                <div class="cell install-date">{{plant.installDate}}</div>
+                <div class="cell number">{{plant.number}}</div>
+                <div class="cell plant-image"><img :src="plant.image" :alt="plant.name" /></div>
+                <div class="cell collected">{{plant.collected}}</div>
+                <div class="cell actions">
+                <button type="button" class="btn-delete" v-on:click="deleteItem(plant)">Delete</button>
+                </div>
+        </div>
+    </div> <!--collection-wrapper ends-->
+     <form v-on:submit.prevent="checkName" class="new-plant-form">
+         <fieldset>
+             <legend>Add a Plant to the collection
+             </legend>
+                <div>
+                <label for="name">Plant Name</label>
+                <input id="name" type="text" 
+                v-model="newPlantObj.name">
+                </div>
+                <div>
+                <label for="install-date">Date Planted</label>
+                <input id="install-date" type="month" 
+                v-model="newPlantObj.installDate">
+                </div>
+                <div>
+                    <label for="number">Quantity</label>
+                    <input id="number" type="number" placeholder=" " v-model.numnber="newPlantObj.number">
+                </div>
+                <div>
+                <label for="image">Image</label>
+                <input id="image" type="text" 
+                v-model="newPlantObj.image">
+                </div>
+                <div>
+                <label for="image">Owned</label>
+                <input id="image" type="checkbox" 
+                v-model="newPlantObj.collected">
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+         </fieldset>
+     </form>
+   </div> <!--app ends-->
+   <!--scripts-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="lib/script.js"></script>
+  </body>
+</html>
