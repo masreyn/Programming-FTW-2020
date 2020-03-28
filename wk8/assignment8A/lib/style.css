@@ -1,38 +1,32 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 
 [v-cloak] {
-display: none;
+    display: none;
 }
 html {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
--webkit-box-sizing: inherit;
--moz-box-sizing: inherit;
-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }
 html {
-background:linear-gradient(0deg, #6e3667 20%, #7abe15 80%);
+    background:linear-gradient(0deg, #6e3667 20%, #7abe15 80%);
 } 
-
 body {
-    box-sizing: border-box;
-    min-height: 100%;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 966px;
     width: 100%;
-    padding: 1em;
-    font-size: 1em;
-    line-height: 1.2; 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1em;
-    max-width: 1080px;
-    /*min-width: 315px;*/
-    box-sizing: border-box; 
+    line-height: 1.2; 
 }
-main{
+main {
+    margin: 2% auto; 
+    padding: 0 3%;
 }
 .form-heading {
     margin-bottom: 3px;;
@@ -43,7 +37,7 @@ main{
     text-transform: uppercase;
     text-align: center;
 }
-form-heading.center{
+.form-heading.center {
    margin: 0 auto;
 }
 .collectionWrapper {
