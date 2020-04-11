@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+      <title>10.2 Exercise: Displaying external JSON data in Vue</title>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="music-list.css">
+    </head>
+  <body>
+    <h1>Billboard Top Streaming Tracks</h1>
+        <div id="musicApp" class="track-wrapper" v-cloak>
+          <streaming-track v-bind:track="song" v-for="song in tracks"></streaming-track>
+        </div> <!--app end-->
+        <div><h6>Billboard Legend</h6></div>
+            <div class="legend">
+            <div class= "track up"><p>Track Up</p></div>
+            <div class= "track no-change"><p>No Change</p></div>
+            <div class="track down"><p>Track Down</p></div> 
+        </div>
+  <script src="10-2.js"></script>
+  </body>
+</html>
