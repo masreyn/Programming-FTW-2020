@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment10A </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+  <link rel="stylesheet" href="styleGrid.css">
+</head>
+<body>
+  <h1 class="heading">Brewdog Beer Recipes </h1>
+  <p>Name </p>
+  <div id="app" class="beer-wrapper" v-cloak>
+    <beer-component v-bind:beer="beer" v-for="beer in beer">
+    </beer-component>
+  </div>
+  <script src="10A1.js"></script>
+</body>
+</html>
