@@ -1,13 +1,13 @@
 Vue.component('beer-component', {
   template: `<div v-bind:class="['beer']">
-                <img v-bind:src="beer.image_url" height="300" />
+                <img v-bind:src="beer.image_url" height="235" />
              <div>
              <div class = "info">
               <h3>{{beer.name}}</h3>
               <p>{{beer.tagline}}</p>
-              <p>ABV - {{beer.abv}}</p>
+              <p>ABV -  {{beer.abv}}</p>
               <p>Attenuation Level - {{beer.attenuation_level}}</p>
-             <p>Yeast - {{beer.ingredients.yeast}}</p>
+              <p>Yeast -  {{beer.ingredients.yeast}}</p>
             </div>
         </div>
       </div>`,
