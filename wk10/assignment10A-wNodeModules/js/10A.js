@@ -1,3 +1,9 @@
+// Assignment10A Display data from an external API in Vue -w/ Node Modules 
+/* created() and mounted() Vue.js hooks
+ HTTP request - promise - .get .then method....function   
+                    ****  -- >axios.get(url) .then(function (res) 
+This combined with mounted() Vue hook here.  
+Created() or mounted() Vue hook can also be written separate from HTTP request-promise-.get .then method */
 Vue.component('beer-component', {
   template: `<div v-bind:class="['beer']">
                 <img v-bind:src="beer.image_url" height="235" />
