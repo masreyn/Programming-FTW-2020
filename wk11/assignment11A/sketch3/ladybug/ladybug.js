@@ -1,9 +1,8 @@
 var y = 75;
 var x = 75;
-var speedx = 2
-var speedy = 2
-var x1 = 550
-var y1 = 550
+var speedx = 2;
+var x1 = 550;
+var y1 = 550;
 var r = 50;
 
 function setup () {
@@ -11,17 +10,17 @@ function setup () {
 }
 function draw () {
   background(93, 140, 174);
-  // ladybug body 
-  strokeWeight(4)
+  // ladybug body \
+  strokeWeight(4);
   stroke(0);
-  fill(225, 0, 0); //red
+  fill(225, 0, 0); // red
   // ellipse(x, y, 50, 50);
-  ellipse(x, y, r*2, r*2);
+  ellipse(x, y, r * 2, r * 2);
   // ladybug line center
   stroke(0);
-  strokeWeight(8)
+  strokeWeight(8);
   line(x, y, x, y + 45);
-  // point head 
+  // point head
   strokeWeight(45);
   stroke(0);
   point(x + 1, y - 43);
@@ -47,17 +46,17 @@ function draw () {
   // ball bounce P5 video
   // speedx
   if (x > 450) {
-    speedx = random(-1, -2)
+    speedx = random(-1, -2);
   }
   if (x < 50) {
-    speedx = random(1, 2)
+    speedx = random(1, 2);
   }
   x = x + speedx
   if (y > 350) {
-    speedy = random(-1, -2)
+    speedy = random(-1, -2);
   }
   if (y < 50) {
-    speedy = random(1, 2)
+    speedy = random(1, 2);
   }
-  y = y + speedy
+  y = y + speedy;
 }

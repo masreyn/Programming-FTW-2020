@@ -1,7 +1,6 @@
 // 2d array cells - strange eyes
 // translate(p5.Vector.fromAngle(millis() / 1000, 40));
-// let x = 0;
-// let y = 0; 
+
 let cols = 20;
 let rows = 25;
 let colors = [];
