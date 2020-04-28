@@ -7,7 +7,6 @@
    triggerAttack when the amplitude >↑ and triggerRelease <↓ amplitude 
    Tone.js standard piano octave notes set to note frequencies */
 // keycodes https://keycode.info/
-// https://p5js.org/reference/#/p5/midiToFreq
 // https://www.guitarland.com/MusicTheoryWithToneJS/EditSynth.html
 // https://newt.phys.unsw.edu.au/jw/notes.html
 
@@ -21,13 +20,12 @@ const b = ['B4'];
 const h = ['C5'];
 
 // var tremolo = new Tone.Tremolo(9, 1).toMaster().start(); -- > needs constructor
-// var osc = new Tone.Oscillator(440, "sine").toMaster().start(); //  <---THIS IS A TEST! Musical note 'A' ocatve 4  440 freq sounds correct
+// var osc = new Tone.Oscillator(440, "sine").toMaster().start(); //  <---THIS IS A TEST!! Musical note 'A' ocatve 4 440 freq sounds correct
 function setup () {
   createCanvas(800, 700);
   poly = new Tone.PolySynth(6, Tone.Synth).toMaster();
   poly.set({
     oscillator: {
-      //type: 'fatsawtooth'
       type: 'sine'
     }
   });
