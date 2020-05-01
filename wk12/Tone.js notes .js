@@ -1,4 +1,7 @@
-// Assigment 12A
+// // Exercise 12.1 & Assigment 12A Musical Instrument
+
+// Player with tone.js saw examples p5.js & ableton site-examples on github
+// https://editor.p5js.org/asd0999/sketches/Hy__xQcjX 
 // class -> https://tonejs.github.io/docs/r13/Tone
 // constructors -> https://tonejs.github.io/docs/
 // https://tonejs.github.io/ set tones to master

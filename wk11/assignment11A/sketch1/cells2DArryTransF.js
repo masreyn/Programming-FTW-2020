@@ -1,3 +1,5 @@
+// Assignment 11A -Themes of Computational Aesthetics
+// Sketch 1 - Repeat w. Translate
 // 2D array  cells in shaker- target drug -  weird eyes
 // translate(p5.Vector.fromAngle(millis() / 1000, 40));
 

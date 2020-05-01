@@ -1,25 +1,25 @@
 // Assignment 11A -Themes of Computational Aesthetics
-// Sketch 1a - Repeat w. RotateX
+// Sketch 11Ac- Repeat - Translate - shear to move
 // array cat eyes 
-const cols = 15;
-const rows = 30;
+const rows = 35;
 
 function setup () {
-  let cnv = createCanvas(windowWidth, windowHeight, WEBGL);
-  cnv.position(0, 0, 'fixed');
+  createCanvas(1000, 1000);
+  translate(0, 0);
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {}
   }
 }
-// cat eye array 
 function draw () {
   background(0);
-  translate(0, 0);
-  rotateX(millis() / 1200);
+  translate(50, 50);
+  clear();
+  // the 'shear' function skews
+  shearX(PI / mouseY * 6);
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
-      let x = i * 94;
-      let y = j * 40;
+      let x = i * 95;
+      let y = j * 70;
       ellipseMode(RADIUS);
       fill(153, 204, 0); // green
       ellipse(x, y, 43, 14);

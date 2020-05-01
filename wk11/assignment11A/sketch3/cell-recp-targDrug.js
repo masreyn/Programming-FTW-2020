@@ -1,3 +1,5 @@
+// Assignment 11A -Themes of Computational Aesthetics
+// Sketch 3 - Repeat 
 var y = 75;
 var x = 75;
 var speedx = 1.5;
@@ -38,8 +40,10 @@ function draw () {
   // cell receptor right 2
   strokeWeight(12);
   point(x + 25, y - 10);
-  // // ball bounce - speed- P5 video - try vector again
-  // // speedx
+  // // ball bounce - speed- P5 video 
+  // // hits the end right width if container - 475 and turns back
+  // // random add some variation - (true direction = vector)
+  // speedx
   if (x > 475) {
     speedx = random(-1, -2)
   }

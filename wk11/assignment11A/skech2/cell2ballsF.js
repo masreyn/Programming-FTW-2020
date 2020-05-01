@@ -1,3 +1,5 @@
+// Assignment 11A -Themes of Computational Aesthetics
+// Sketch 2 - Repeat w. Paramatorize, translate, scale
 function setup () {
   createCanvas(725, 540);
   background(50, 89, 100);
@@ -7,7 +9,7 @@ function createCell (orginX, orginY, largeCircle, ball1, ball2) {
   fill(50, 89, 100);
   rect(0, 0, 725, 540);
   rect(0, 0, 200, 200);
-  // //cell set
+  // //cell set object
   // circle - large
   noFill();
   stroke(largeCircle);
@@ -28,6 +30,7 @@ function createCell (orginX, orginY, largeCircle, ball1, ball2) {
   ellipse(25, 75, 30);
   scale(0.70);
 } // end fxn createCell
+  // instances of object
 function draw () {
   createCell(0, 0, 'white', 'yellow', 'red');
   createCell(235, 275, 'white', 'yellow', 'red');

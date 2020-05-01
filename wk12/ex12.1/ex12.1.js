@@ -1,4 +1,6 @@
-// Player with tone.js saw on ableton site-example on github
+// // Exercise 11.1 Sound - Graph Amplitude Elucidate Changing Shapes
+// Player with tone.js saw examples p5.js & ableton site-examples on github
+// https://editor.p5js.org/asd0999/sketches/Hy__xQcjX 
 // https://loop.ableton.com/2017/program/activity/interactive-music-tonejs/
 // https://tonejs.github.io/docs/r13/Players
 // https://tonejs.github.io/ set tones to master

@@ -1,0 +1,22 @@
+html {
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    background: #36454F;
+    background: #F8F8F8;
+}
+#defaultCanvas0{
+    padding-top: 0px;
+    margin-top: 15px;
+    margin-top: 15px;
+}
+.p5Canvas {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-bottom: 15px;
+}
+.slider{
+    color: 0;
+}
+
+/* <canvas id="defaultCanvas0" class="p5Canvas" width="1450" height="800" style="width: 725px; height: 540px;"></canvas>*/

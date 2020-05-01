@@ -1,3 +1,5 @@
+// Assignment 11A -Themes of Computational Aesthetics
+// Sketch 3b - Repeat 
 var y = 75;
 var x = 75;
 var speedx = 2;
@@ -10,7 +12,7 @@ function setup () {
 }
 function draw () {
   background(93, 140, 174);
-  // ladybug body \
+  // ladybug body
   strokeWeight(4);
   stroke(0);
   fill(225, 0, 0); // red
@@ -42,8 +44,8 @@ function draw () {
   // points right 2
   strokeWeight(20);
   point(x + 25, y - 10);
-  // speed original -redo vector
-  // ball bounce P5 video
+  // // ball bounce - speed- P5 video
+  // // hits the end right width if container - 475 and turns back
   // speedx
   if (x > 450) {
     speedx = random(-1, -2);
@@ -52,6 +54,7 @@ function draw () {
     speedx = random(1, 2);
   }
   x = x + speedx
+  // speedy
   if (y > 350) {
     speedy = random(-1, -2);
   }

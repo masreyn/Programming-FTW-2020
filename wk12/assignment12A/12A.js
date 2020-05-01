@@ -1,4 +1,6 @@
 // Assigment 12A
+// Player with tone.js saw examples p5.js & ableton site-examples on github
+// https://editor.p5js.org/asd0999/sketches/Hy__xQcjX 
 // class -> https://tonejs.github.io/docs/r13/Tone
 // constructors -> https://tonejs.github.io/docs/
 // https://tonejs.github.io/ set tones to master
@@ -95,6 +97,7 @@ function draw () {
     text('C', 695, 223);4
   }
 } // end fnx draw
+  // function keyPressed play note/chord - trigger Attack Release here
 function keyPressed () {
   if (keyCode === 49) {
     poly.triggerAttackRelease(c, 0.60);
