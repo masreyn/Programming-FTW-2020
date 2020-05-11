@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*padding: 2.5em; */
+}
+.title{
+  margin: 25px 0px 8px 14px;
+}
+
+/*h4 {
+  margin: 5 0 0 20px;
+  margin-left: 10px;
+} */
+
+button {
+    display: flex;
+    flex-direction: row;
+    padding: 0.6em;
+    /* margin: 0.5em; */
+    border: none;
+    border-radius: 10px;
+    font-style: bold;
+    text-align: center;
+    color: white;
+    background: #6A588B;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    background:#6A588B;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
