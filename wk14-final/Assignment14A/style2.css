@@ -1,0 +1,91 @@
+html {
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    background-color:rgba(0, 0, 35, 25);
+  min-height: 100%;
+}
+#defaultCanvas0{
+    padding-top: 20px;
+    margin-top: 2px;
+}
+.p5Canvas {
+    margin-top: 0px;
+    margin-left: 5px;
+
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+    /*margin: 20px 0px 0px 0px;*/
+}
+.title{
+  margin: 25px 0px 8px 14px;
+}
+
+/*h4 {
+  margin: 5 0 0 20px;
+  margin-left: 10px;
+} */
+.flex-container {
+  display: flex;
+  justify-content: end;
+}
+button {
+   /*display: flex;
+    flex-direction: row;
+    justify-content: end;*/
+    padding: 0.8em;
+    margin: 25px 0px 25px 30px;
+    border: none;
+    border-radius: 10px;
+    font-style: bold;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: #6A588B;
+    transition: all .5s ease-in-out; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background:#6A588B;
+    background-color: #2EE59D;
+    background-color: #968aad;
+    background-color: #FFFF4D;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+    transform: scale(1.2); 
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    /* box-shadow: 4px 4px 2px rgba(255,255,0, 0.8);*/
+    color: #6A588B;
+    color: #f8f8ff;
+    color: #6A588B;
+    transform: translateY(-7px);
+ 
+}
+.restart{
+  display: flex;
+  flex-direction: row;
+  padding: 0.7em;
+}
+
+/*.restart{
+  /*display: flex;
+  flex-direction: row;
+  padding: 0.7em;
+  margin: 27px 0px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-style: bold;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background: #6A588B;
+  transition: all .5s ease-in-out; /*
+ padding: 0.7em;
+}
