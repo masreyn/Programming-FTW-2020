@@ -78,7 +78,5 @@ function draw () {
   t += 1.1;
   if (frameCount % 400 === 0) {
     background(191, 255, 0);
-   // background(239, 252, 95);
-   // background(255, 255, 0)
   }
 }
